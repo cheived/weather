@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Weather</title>
+    <script src="node_modules/moment/moment.js"></script>
+    <script src="node_modules/moment-timezone/moment-timezone-with-data.js"></script>
+</head>
+
+<body>
+
+    <div class="main-content">
+        <!-- <div class="loading-screen">Загрузка...</div> -->
+        <div class="tab-wrapper">
+            <div class="tab-column">
+                <!-- <div class="button-city">Санкт-петербург</div>
+                <div class="button-city">Москва</div>
+                <div class="button-city">Тбилиси</div>
+                <div class="button-city">Газах</div>
+                <div class="button-city">Газах</div>
+                <div class="button-city">Газах</div>
+                <div class="button-city">Газах</div>
+                <div class="button-city">Газах</div>
+                <div class="button-city">Газах</div> -->
+                <!-- <div class="button-city">Газах</div> -->
+                <img src="img/plus.svg" class="img">
+            </div>
+            <div class="start-screen hide">
+                <!-- <div class="city-choose">Выберите город:</div> -->
+                <div class="city-choose">
+                    <input class="city-choose city-choose-input" name="city" placeholder="Введите город">
+                    <div><button class="city-choose city-choose-btn">Поиск</button></div>
+
+                </div>
+
+            </div>
+            <div class="weather-tab-wrapper">
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>

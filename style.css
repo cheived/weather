@@ -1,0 +1,246 @@
+body {
+    background-color: black;
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tab-wrapper {
+    background-color: white;
+    display: flex;
+    /* margin: 5px; */
+    /* padding: 10px; */
+    border-radius: 10px;
+    /* vertical-align: middle; */
+    height: 500px;
+    width: 1000px;
+
+
+}
+
+.tab-column {
+    background-color: #CFCFCF;
+    /* height: 100%; */
+    width: 20%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-right: 2px solid #808080;
+    padding: 0px 5px 0px 5px;
+    /* overflow-y: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.button-city {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    width: calc(100% - 10px);
+    word-wrap: break-word;
+    user-select: none;
+    cursor: pointer;
+
+
+    &:hover {
+        transition: 200ms background-color ease-in-out;
+        background-color: #CFCFCF;
+    }
+}
+
+.weather-tab {
+    color: black;
+    /* padding: 10px; */
+    /* height: 100%; */
+    /* width: 80%; */
+    /* width: 80%; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    align-items: stretch;
+}
+
+.img {
+    width: 33px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 100%;
+
+    &:hover {
+        transition: 200ms background-color ease-in-out;
+        background-color: #808080;
+
+    }
+}
+
+.city-title {
+    /* width: calc(100% - 10px); */
+    height: 10%;
+    padding: 5px;
+    /* text-align: center; */
+    font-size: 40px;
+    /* background-color: #CFCFCF; */
+    border-bottom: 2px solid #808080;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.timezone {
+    display: flex;
+}
+
+.utc {
+    font-size: 20px;
+}
+
+.half-wrapper {
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    width: 50%;
+}
+
+.wrapper {
+    display: flex;
+    /* height: 100%; */
+}
+
+.img-weather {
+    height: 64px;
+    /* float: right; */
+    /* margin-top: 8px; */
+}
+
+.weather-conditions {
+    font-size: 45px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-left: 5px;
+    line-height: 43px;
+
+}
+
+.weather-temp {
+    font-size: 65px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.half-wrapper-first {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.weather-params {
+    font-size: 30px;
+    margin: 10px;
+    margin-top: 0px;
+}
+
+.weather-parameter {
+    margin: 5px;
+}
+
+.start-screen {
+    width: 80%;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hide {
+    display: none;
+}
+
+.city-choose {
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    font-size: 23px;
+}
+
+.forecast {
+    height: 50%;
+    text-align: center;
+    border-left: 2px solid #808080;
+    padding: 10px;
+    border-top: 2px solid #808080;
+    padding-top: 2px;
+}
+
+/* .forecast-second {
+    height: 50%;
+    text-align: center;
+    border-left: 2px solid #808080;
+    padding: 10px;
+    border-top: 2px solid #808080;
+    padding-top: 2px;
+    /* width: 50%; */
+
+
+.temp-forecast {
+    font-size: 48px;
+    /* float: left; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.conditions-forecast {
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+}
+
+.flex-panel {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 15px;
+}
+
+/* .forecast-wind-speed {
+    text-align: left;
+    font-size: 30px;
+} */
+
+.weather-tab-wrapper {
+    /* display: flex; */
+    width: 80%;
+}
+
+.loading-screen {
+    height: 500px;
+    width: 1000px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+}
