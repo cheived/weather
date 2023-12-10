@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const getAPI = function (city) {
         return new Promise((resolve) => {
             const request = new XMLHttpRequest();
-            request.open('GET', `http://api.weatherapi.com/v1/forecast.json?key=e3ea5926f9074031a78195423230312&q=${city}&days=3&lang=ru`);
+            request.open('GET', `https://api.weatherapi.com/v1/forecast.json?key=e3ea5926f9074031a78195423230312&q=${city}&days=3&lang=ru`);
             request.send();
             request.addEventListener('load', () => {
                 if (request.status === 200) {
