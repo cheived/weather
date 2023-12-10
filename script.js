@@ -10,17 +10,19 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //functions
     const getAPI = function (city) {
-        return new Promise((resolve) => {
-            const request = new XMLHttpRequest();
-            request.open('GET', `https://api.weatherapi.com/v1/forecast.json?key=e3ea5926f9074031a78195423230312&q=${city}&days=3&lang=ru`);
-            request.send();
-            request.addEventListener('load', () => {
-                if (request.status === 200) {
-                    resolve(JSON.parse(request.response));
-                }
+        // return new Promise((resolve) => {
+        //     const request = new XMLHttpRequest();
+        //     request.open('GET', `https://api.weatherapi.com/v1/forecast.json?key=e3ea5926f9074031a78195423230312&q=${city}&days=3&lang=ru`);
+        //     request.send();
+        //     request.addEventListener('load', () => {
+        //         if (request.status === 200) {
+        //             resolve(JSON.parse(request.response));
+        //         }
 
-            });
-        });
+        //     });
+        // });
+        return fetch(`https://api.weatherapi.com/v1/forecast.json?key=e3ea5926f9074031a78195423230312&q=${city}&days=3&lang=ru`)
+            .then(response => response.json());
     }
 
 
@@ -187,8 +189,8 @@ window.addEventListener('DOMContentLoaded', () => {
     cityChooseBtn.addEventListener('click', () => {
         if (document.querySelector('.city-choose-input').value) {
             getAPI(document.querySelector('.city-choose-input').value)
+                // .then(response => response.json())
                 .then(result => {
-                    console.log(result);
                     createTab(result);
                 });
         }
